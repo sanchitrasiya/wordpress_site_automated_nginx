@@ -202,6 +202,7 @@ ping -W 1 -c 1 google.com 1> /dev/null;
 
 if [ ! $? = 0 ]; then
 	echo "Please connect to internet before running this script!"
+	exit 1;
 	else 
 	echo "Connected"
 	echo 
